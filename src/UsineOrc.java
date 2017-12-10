@@ -1,4 +1,4 @@
-public class SimpleFabrique {
+public class UsineOrc extends Usine {
     public Unite creerUnite(TypeUnite type){
         Unite unite = null;
         switch (type){
@@ -8,4 +8,3 @@ public class SimpleFabrique {
         return unite;
     }
 }
-

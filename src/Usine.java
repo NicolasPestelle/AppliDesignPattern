@@ -1,16 +1,11 @@
-public class Usine {
-    //attribut contenant la fabrique
-    private SimpleFabrique simpleFabrique;
-
-    //selection de la fabrique a utiliser
-    public Usine(){
-        this.simpleFabrique = new SimpleFabrique();
-    }
+public abstract class Usine {
 
     public Unite formerUnite(TypeUnite type){
-        Unite unite = this.simpleFabrique.creerUnite(type);
+        Unite unite = this.creerUnite(type);
         unite.consommerRessource();
         unite.equiper();
         return unite;
     }
+
+    public abstract Unite creerUnite(TypeUnite type);
 }

@@ -16,14 +16,15 @@ public abstract class Unite {
     public abstract void equiper();
 
     public String toString(){
-        StringBuilder str = new StringBuilder("Nom : " + this.nom + " \n\r");
-        str.append("Coût de construction : ").append(this.coutConstruction).append(" \n\r");
-        str.append("Précision d'attaque : ").append(this.precisionAttaque).append(" \n\r");
-        str.append("Esquive : ").append(this.esquiveDefense).append(" \n\r");
-        str.append("Equipement : ");
-        for (Object equipement : this.equipements) {
-            str.append(equipement).append(" ");
+        String str = "Nom : "+this.nom+"\n";
+        str += "Coût de construction : "+this.coutConstruction+"\n";
+        str += "Précision d'attaque : "+this.precisionAttaque+"\n";
+        str += "Esquive en défense : "+this.esquiveDefense+"\n";
+        str += "Equipements : ";
+        for(int i=0; i<this.equipements.size(); i++)
+        {
+            str += this.equipements.get(i)+" ";
         }
-        return str.toString();
+        return str;
     }
 }
