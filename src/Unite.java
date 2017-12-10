@@ -9,7 +9,7 @@ public abstract class Unite {
 
     //méthode qui consomme les ressources pour la création de l'unité
     public void consommerRessource(){
-        System.out.println("consomme "+this.coutConstruction+"ressources pour la création de l'unité");
+        System.out.println("Consomme "+this.coutConstruction+" ressources pour la création de l'unité");
     }
 
     //méthode abstraite pour pouvoir équiper l'unité
